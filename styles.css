@@ -90,6 +90,11 @@ welcome-text {
     justify-content: space-evenly;
     align-items: center; 
     text-align: left; 
+    flex-wrap: wrap;
+}
+
+bio {
+    flex: 1;
 }
 
 /* Education */
@@ -123,6 +128,7 @@ edu {
     display: flex;
     justify-content: space-evenly;
     align-items: flex-end; 
+    flex-wrap: wrap;
 }
 
 /* Experiences */
