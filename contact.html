@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Jan Kwong </title>
     <link rel="icon" href="icon/icon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
     <style>
         header, footer {
             border: 1px solid black;
@@ -70,18 +71,6 @@
             
             <br><br>
 
-            How was your navigational experience of my site?
-            <input list="rating" id="rates" name="rates">
-            <datalist id="rating">
-                <option value="5: Very easy">
-                <option value="4: Easy">
-                <option value="3: Fine">
-                <option value="2: Not so easy">
-                <option value="1: Difficult">
-            </datalist>
-
-            <br><br>
-
             What is the best way to reply to you?
             <select id="contact-back" name="contact-back">
                 <optgroup label="Contact Means">
@@ -98,29 +87,11 @@
             <p>(Or press <kbd>Enter</kbd> to submit.)</p>
 
         </form>
-
-        <canvas id="canvas" width="300" height="150"></canvas>
-        <script>
-            var canvas = document.getElementById("canvas");
-            var ctx = canvas.getContext("2d");
-            ctx.font = "30px Merriweather"; 
-            ctx.fillStyle = "blue";
-            ctx.fillText("Thank you!", 60, 80);
-        </script>
-
-        <svg width="200" height="200">
-            <!-- Smiley Face -->
-            <circle cx="100" cy="100" r="80" fill="yellow" stroke="black" stroke-width="3" />
-            <circle cx="70" cy="75" r="10" fill="black" />
-            <circle cx="130" cy="75" r="10" fill="black" />
-            <path d="M60,120 Q100,150 140,120" stroke="black" stroke-width="5" fill="transparent" />
-        </svg>
     </main>
     <hr>
     <footer>
         <address>Contact me at: <a href="mailto:jykwong@ucsd.edu">jykwong@ucsd.edu</a></address>
         <address>LinkedIn: <a href="https://www.linkedin.com/in/jankwong705/">https://www.linkedin.com/in/jankwong705/</a></address>
-        <audio id="bgm" src="audio/bgm.mp3" autoplay loop controls>(Music seems to not play. Let there be silence...)</audio>
     </footer>
 </body>
 </html>
