@@ -6,11 +6,6 @@
     <title>About Jan</title>
     <link rel="icon" href="icon/icon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="styles.css">
-    <style>
-        header, footer {
-            border: 1px solid black;
-        }
-    </style>
 </head>
 <body>
     <noscript>
@@ -29,29 +24,34 @@
     </header>
     <hr>
     <main>
-        <hgroup id="about-header">
+        <hgroup id="about-header" class="page-header">
             <h1>About me</h1>
         </hgroup>
-        <figure>
-            <img src="img/headshot.png" alt="Jan's Profile Picture" width="200" id="jan-pic">
-        </figure>
         <section id="bio">
-            <h2>Bio:</h2>
-            My name is Jan Kwong. I am a Computer Science student at UC San Diego, expecting to graduate in <ins>June 2025</ins>. I have a passion for software engineering higher education research. I have been an Undergraduate Research Assistant at the UCSD LASR Lab, where I participated in a project on forced aligners and neural networks for phonetic recognition. I was also a computer science tutor at my school for the course of Theory of Computability. 
+            <bio>
+                <h2>Bio:</h2>
+                <p>My name is Jan Kwong. I am a Computer Science student at UC San Diego, expecting to graduate in <ins>June 2025</ins>. I have a passion for software engineering higher education research. I have been an Undergraduate Research Assistant at the UCSD LASR Lab, where I participated in a project on forced aligners and neural networks for phonetic recognition. I was also a computer science tutor at my school for the course of Theory of Computability.</p> 
 
-            In my research assistant role, I read and analyzed papers on different ASR models, such as <dfn id="def-whisper">Whisper</dfn>, an ASR model by Open-AI, and implemented programs that calculate the word error rate of the recognized speech output. I used Git as a version control tool and collaborated with other researchers and supervisors. 
+                <p>In my research assistant role, I read and analyzed papers on different ASR models, such as <dfn id="def-whisper">Whisper</dfn>, an ASR model by Open-AI, and implemented programs that calculate the word error rate of the recognized speech output. I used Git as a version control tool and collaborated with other researchers and supervisors.</p> 
 
-            In my computer science tutor role, I held weekly office hours for students, explained course concepts patiently, and discussed concerns with the instructor. I also graded homework and exams from students, giving them insightful and useful feedback. 
+                <p>In my computer science tutor role, I held weekly office hours for students, explained course concepts patiently, and discussed concerns with the instructor. I also graded homework and exams from students, giving them insightful and useful feedback.</p> 
 
-            I enjoy working with students and researchers who share my interest in learning and innovation. I value diversity, collaboration, and feedback, and I believe that I can bring unique perspectives and experiences to the team.
+                <p>I enjoy working with students and researchers who share my interest in learning and innovation. I value diversity, collaboration, and feedback, and I believe that I can bring unique perspectives and experiences to the team.</p>
+            </bio>
+            <figure>
+                <img src="img/headshot.png" alt="Jan's Profile Picture" width="500" id="jan-pic">
+            </figure>
         </section>
 
         <section id="education">
-            <h2 id="edu-head">Education:</h2>
-            <div>UC San Diego</div>
-            <div>Expected Graduation Date: June 2025</div>
-            <div>Major: B.S. Computer Science</div>
-            <div>GPA: 3.8</div> <br>
+            <edu>
+                <h2 id="edu-head">Education:</h2>
+                <div>UC San Diego</div>
+                <div>Expected Graduation Date: June 2025</div>
+                <div>Major: B.S. Computer Science</div>
+                <div>GPA: 3.8</div>
+            </edu>
+            <br>
             <table border="1" id="courses">
                 <caption id="course-table-title"><b>Courses Taken</b></caption>
                 
@@ -112,14 +112,16 @@
             </table>
         </section>
 
-        <h2 id="resume">My Resume:</h2>
-        <iframe src="resume/resume.pdf" width="600" height="400"></iframe>
-        
+        <section id="resume">
+            <h2>My Resume:</h2>
+            <iframe src="resume/resume.pdf" width="600" height="400"></iframe>
+        </section>
+
         <aside id="hobbies">
-            <h2>Hobbies</h2>
+            <h2>Hobbies:</h2>
             <p>I really like <span class="hob">dancing and cooking</span> in my spare time!</p>
 
-            <i>Some of my dancing videos:</i> <br>
+            <pre>Some of my dancing videos:</pre> <br>
             <video id="dance" width="600" height="400" controls>
                 <source src="vid/IMG_4595.mp4" type="video/mp4">
                 Unfortunately, the video might not be supported by your browser :(. 
@@ -127,9 +129,9 @@
             
             <br><br>
 
-            <i>Some of the food I've made:</i> <br> 
+            <pre>Some of the food I've made:</pre> <br> 
 
-            <picture>
+            <picture id="food-pic">
                 <img src="img/steak.jpg" alt="Steak" width="400">
                 <figcaption><i><pre>Steak with Mashed Potatoes and Roasted Brussel Sprouts</pre></i></figcaption> <br>
                 <img src="img/egg_sw.jpg" alt="Egg sandwich" width="400">
