@@ -9,8 +9,8 @@
 
 header, footer {
     padding: var(--standard-gap);
-    font-variant: small-caps;
     font-size: larger;
+    font-variant: small-caps;
 }
 
 h1, h2 {
@@ -33,9 +33,9 @@ h1, h2 {
     }
 }
 
-img, video {
+img, video, iframe {
     max-height: 50dvh;
-    max-width: 80dvw;
+    max-width: 90dvw;
 }
 
 video:hover, img:hover, #msg-button:hover {
@@ -59,6 +59,7 @@ nav ul {
     list-style: none;
     padding: 0;
     transition: background-color 0.3s ease-in-out, transform 0.3s ease;
+    flex-wrap: wrap;
 }
 
 nav ul li:hover {
@@ -72,11 +73,11 @@ nav ul li {
     border: 2px solid;
     border-radius: 3px;
     text-align: center;
+    background-color: #ffffff;
 }
 
 a {
     text-decoration: none;
-    font-variant: normal;
 }
 
 /* Sections */
