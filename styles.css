@@ -24,11 +24,9 @@ h1, h2 {
 @keyframes fade {
     from {
         opacity: 0;
-        transform: translateY(30px);
     }
     to {
         opacity: 1;
-        transform: translateY(0);
     }
 }
 
@@ -119,9 +117,15 @@ edu {
     align-items: flex-end; 
 }
 
+/* Experiences */
+h3 {
+    font-variant: small-caps;
+}
+
 job-exp {
+    animation: fade 1.5s ease-in-out;
     display: block;
-    padding: 20px;
+    padding: var(--standard-gap);
     margin: 10px;
     background-color: #ffffff;
     border: 2px solid #021218;
@@ -129,4 +133,14 @@ job-exp {
     text-align: left;
     color: #333;
     font-size: 1.2em;
+}
+
+job-exp:hover {
+    transition: transform 0.5s ease-in-out;
+    transform: scale(1.01);
+}
+
+job-exp:not(:hover) {
+    transition: transform 0.5s ease-in-out;
+    transform: scale(1);
 }
