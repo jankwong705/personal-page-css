@@ -34,9 +34,9 @@
             <li>Leave a message <em><b>here:</b></em></li>
         </ol>
   
-        <form action="https://reqres.in/api/test" method="post" id="personal-detail">
-            <fieldset id="per-det-field">
-                <legend>Personal Details:</legend>
+        <form action="https://reqres.in/api/test" method="post" id="send-msg">
+            <fieldset id="send-msg-part">
+                <legend>Send me a message:</legend>
                 <label for="name">Your Name:</label>
                 <input type="text" id="name" name="name" required>
                 
@@ -49,32 +49,30 @@
 
                 <label for="number">Your Phone Number (optional):</label>
                 <input type="number" id="number" name="number">
+
+                <br><br>
+            
+                <label for="message">Your Message:</label> <br>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea> 
+
+                <br><br>
+
+                What is the best way to reply to you?
+                <select id="contact-back" name="contact-back">
+                    <optgroup label="Contact Means">
+                    <option value="email-back">Email</option>
+                    <option value="call-back">Phone Number</option>
+                    <option value="no-need">No need to contact me</option>
+                    </optgroup>
+                </select>
+
+                <br><br>
+
+                <button type="submit" action="https://reqres.in/api/test">Send Message</button>
+
             </fieldset>
-            
-            
-            <br><br>
-            
-            <label for="message">Your Message:</label> <br>
-            <textarea id="message" name="message" rows="4" cols="50" required></textarea> 
-            
-            <br><br>
-
-            What is the best way to reply to you?
-            <select id="contact-back" name="contact-back">
-                <optgroup label="Contact Means">
-                  <option value="email-back">Email</option>
-                  <option value="call-back">Phone Number</option>
-                  <option value="no-need">No need to contact me</option>
-                </optgroup>
-            </select>
-
-            <br><br>
-
-            <button type="submit" action="https://reqres.in/api/test">Send Message</button>
-
-            <p>(Or press <kbd>Enter</kbd> to submit.)</p>
-
         </form>
+        <br>
     </main>
     <hr>
     <footer>
