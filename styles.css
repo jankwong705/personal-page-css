@@ -23,7 +23,7 @@
         font-size: x-large !important;
     }
     img, video, iframe {
-        max-height: 50dvh;
+        max-height: 60dvh;
         max-width: 90dvw;
     }
     video:hover, img:hover, #msg-button:hover {
@@ -64,6 +64,10 @@
     }
     nav ul li {
         font-size: x-large !important;
+    }
+    img, video, iframe {
+        max-height: 60dvh;
+        max-width: 90dvw;
     }
     #send-msg-part {
         font-variant: small-caps;
