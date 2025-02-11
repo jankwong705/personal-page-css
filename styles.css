@@ -7,6 +7,7 @@
     font-family: var(--font-primary, system-ui);
 }
 
+/* Phones */
 @media (max-width: 768px) {
     * {
         text-align: center !important;
@@ -44,7 +45,39 @@
     .contact-label {
         font-size: large !important;
     }
-    
+    #msg-button, #contact-back {
+        font-size: 15px;
+        font-weight: 300;
+        min-width: 80dvw;
+        font-size: large !important;
+    }
+}
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 1200px) {
+    .page-header {
+        font-size: x-large !important;
+    }
+    address {
+        font-size: larger !important;
+        font-weight: 300 !important;
+    }
+    nav ul li {
+        font-size: x-large !important;
+    }
+    #send-msg-part {
+        font-variant: small-caps;
+        font-size: xx-large !important;
+    }
+    .contact-label {
+        font-size: large !important;
+    }
+    #msg-button, #contact-back {
+        font-size: 15px;
+        font-weight: 300;
+        min-width: 60dvw;
+        font-size: large !important;
+    }
 }
 
 header, footer {
