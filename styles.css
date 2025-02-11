@@ -11,6 +11,11 @@ header, footer {
     padding: var(--standard-gap);
 }
 
+h1, h2 {
+    font-weight: 500;
+    font-variant: small-caps;
+}
+
 .page-header {
     padding: var(--standard-gap);
 }
@@ -59,14 +64,14 @@ nav ul li {
     text-align: center;
 }
 
-h1, h2 {
-    font-weight: 500;
-    font-variant: small-caps;
+a {
+    text-decoration: none;
 }
 
+/* Sections */
 #home, #bio, #education {
     display: flex;
-    gap: var(--standard-gap);
+    padding: var(--standard-gap, 1rem);
     animation: fade 1.5s ease-out;
 }
 
@@ -103,8 +108,15 @@ edu {
     border: 1px solid black;
 }
 
+/* Pictures of hobbies */
 #resume, #hobbies {
-    padding: var(--standard-gap);
+    padding: var(--standard-gap, 1rem);
+}
+
+#food-pic {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end; 
 }
 
 job-exp {
@@ -118,5 +130,3 @@ job-exp {
     color: #333;
     font-size: 1.2em;
 }
-
-
