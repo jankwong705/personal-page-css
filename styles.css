@@ -1,0 +1,57 @@
+:root {
+    --font-primary: "Georgia", sans-serif;
+    --standard-gap: 1rem;
+   }
+   
+* {
+    font-family: var(--font-primary, system-ui);
+}
+
+header, footer {
+    padding: var(--standard-gap);
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    gap:  var(--standard-gap);
+    list-style: none;
+    padding: 0;
+}
+
+h1, h2 {
+    font-weight: 500;
+    font-variant: small-caps;
+}
+
+li {
+    display: block;
+    padding: 8px 10px;
+    border: 2px solid;
+    border-radius: 3px;
+    text-align: center;
+}
+
+#home {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; 
+    text-align: left; 
+}
+
+welcome-text {
+    font-size: x-large;
+}
+
+job-exp {
+    display: block;
+    padding: 20px;
+    margin: 10px;
+    background-color: #f0f8ff;
+    border: 2px solid #008cba;
+    border-radius: 3px;
+    text-align: left;
+    color: #333;
+    font-size: 1.2em;
+}
+

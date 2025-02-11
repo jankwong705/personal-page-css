@@ -6,18 +6,13 @@
     <title>Jan Kwong's Portfolio</title>
     <link rel="icon" href="icon/icon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="styles.css">
-    <style>
-        header, footer {
-            border: 1px solid black;
-        }
-    </style>
-     <script>
+    <script>
         customElements.define('hello-world', class extends HTMLElement {
             connectedCallback() {
                 console.log("Hello world!");
             }
         });
-      </script>
+    </script>
 </head>
 <body>
     <noscript>
@@ -25,7 +20,7 @@
     </noscript>
     <header>
         <nav>
-            <ul>
+            <ul id="nav-list">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Me</a></li>
                 <li><a href="exp.html">Experiences</a></li>
@@ -33,13 +28,6 @@
                 <li><a href="contact.html">Contact Me</a></li>
             </ul>
         </nav>
-        <search>
-            Search on my site:
-            <form action="https://reqres.in/api/test" method="get">
-                <input type="text" name="query" placeholder="Search...">
-                <button type="search">Search</button>
-            </form>
-        </search>
     </header>
     <hr>
     <main>
@@ -47,31 +35,19 @@
             <h1>Home</h1>
         </hgroup>
         <section id="home">
-            <h2>Hi, I'm Jan.</h2>
+            <welcome-text>
+                <h2>Hi, I'm Jan.</h2> <br>
+                <p><strong>Welcome to my portfolio!</strong> 
+                    <hello-world></hello-world><br>
+                    <br>
+                    I'm a <b>4th-year undergraduate student</b> studying computer science at <abbr title="University of California">UC</abbr> San Diego. <br>
+                    Here you'll find information about my <em>projects, experiences, and ways to contact me.</em>
+                </p>
+            </welcome-text>
             <figure>
-                <img src="img/headshot.png" alt="Jan's Profile Picture" width="200">
+                <img src="img/headshot.png" alt="Jan's Profile Picture" width="500" id="jan-pic">
             </figure>
-            <code>Hello World!</code>
-            <p><strong>Welcome to my portfolio!</strong> 
-                <hello-world></hello-world><br>
-                <br>
-                I'm a <b>4th-year undergraduate student</b> studying computer science at <abbr title="University of California">UC</abbr> San Diego. <br>
-                Here you'll find information about my <em>projects, experiences, and ways to contact me.</em>
-            </p>
         </section>
-        <h3 id="contents">Contents:</h3>
-        <dl id="content-items">
-            <dt>Home</dt>
-                <dd>The langing page you see here!</dd>
-            <dt>About me</dt>
-                <dd>My biography, my education, and my hobbies</dd>
-            <dt>Experiences</dt>
-                <dd>My professional experiences with fine details</dd>
-            <dt>Projects</dt>
-                <dd>Personal projects showcasing my skills</dd>
-            <dt>Contact me</dt>
-                <dd>Means to contact me</dd>
-        </dl>
     </main>
     <hr>
     <footer>
