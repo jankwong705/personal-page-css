@@ -23,7 +23,7 @@ h1, h2 {
     padding: var(--standard-gap);
 }
 
-/* Animations, Transitions, and transforms*/
+/* Animations, Transitions, and Transforms */
 @keyframes fade {
     from {
         opacity: 0;
