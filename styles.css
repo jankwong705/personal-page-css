@@ -93,6 +93,11 @@ welcome-text {
     flex-wrap: wrap;
 }
 
+#jan-pic {
+    max-height: 50dvh;
+    max-width: 80dvw;
+}
+
 bio {
     flex: 1;
 }
@@ -105,12 +110,12 @@ bio {
 
 edu {
     flex: 1; 
-    max-width: 40%;
+    max-width: 40vw;
 }
 
 #courses {
     flex: 1; 
-    max-width: 50%;
+    max-width: 50vw;
 }
 
 #courses th, #courses td {
