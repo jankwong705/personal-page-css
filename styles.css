@@ -7,11 +7,50 @@
     font-family: var(--font-primary, system-ui);
 }
 
+@media (max-width: 768px) {
+    * {
+        text-align: center !important;
+    }
+    .page-header {
+        font-size: x-large !important;
+    }
+    address {
+        font-size: larger !important;
+        font-weight: 300 !important;
+    }
+    nav ul li {
+        font-size: x-large !important;
+    }
+    img, video, iframe {
+        max-height: 50dvh;
+        max-width: 90dvw;
+    }
+    video:hover, img:hover, #msg-button:hover {
+        transition: none !important;
+        transform: none !important;
+    }
+    job-exp:hover {
+        transition: none !important;
+        transform: none !important;
+    }
+    video:not(:hover), img:not(:hover), #msg-button:not(:hover), job-exp:not(:hover) {
+        transition: none !important;
+        transform: none !important;
+    }
+    #send-msg-part {
+        font-variant: small-caps;
+        font-size: xx-large !important;
+    }
+    .contact-label {
+        font-size: large !important;
+    }
+    
+}
+
 header, footer {
     padding: var(--standard-gap);
     font-size: larger;
     font-variant: small-caps;
-    
 }
 
 h1, h2 {
@@ -164,7 +203,7 @@ job-exp:has(h3) {
 
 #send-msg-part {
     font-variant: small-caps;
-    font-size: larger;
+    font-size: x-large;
 }
 
 .contact-lebel {
