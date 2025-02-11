@@ -33,45 +33,47 @@
             <li>Send me a message on <a href="https://www.linkedin.com/in/jankwong705/">LinkedIn</a></li>
             <li>Leave a message <em><b>here:</b></em></li>
         </ol>
-  
-        <form action="https://reqres.in/api/test" method="post" id="send-msg">
-            <fieldset id="send-msg-part">
-                <legend>Send me a message:</legend>
-                <label for="name">Your Name:</label>
-                <input type="text" id="name" name="name" required>
+        <section id="contact">
+            <form action="https://reqres.in/api/test" method="post" id="send-msg">
+                <fieldset>
+                    <legend id="send-msg-part">Send me a message:</legend>
+                    <br>
+                    <label for="name" class="contact-label">Your Name:</label>
+                    <input type="text" id="name" name="name" class="contact-field" required>
+                    
+                    <br><br>
+                    
+                    <label for="email" class="contact-label">Your Email:</label>
+                    <input type="email" id="email" name="email" class="contact-field" required>
+                    
+                    <br><br>
+
+                    <label for="number" class="contact-label">Your Phone Number (optional):</label>
+                    <input type="number" id="number" name="number" class="contact-field">
+
+                    <br><br>
                 
-                <br><br>
-                
-                <label for="email">Your Email:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <br><br>
+                    <label for="message" class="contact-label">Your Message:</label> <br>
+                    <textarea id="message" name="message" rows="4" cols="50" class="contact-field" required></textarea> 
 
-                <label for="number">Your Phone Number (optional):</label>
-                <input type="number" id="number" name="number">
+                    <br><br>
 
-                <br><br>
-            
-                <label for="message">Your Message:</label> <br>
-                <textarea id="message" name="message" rows="4" cols="50" required></textarea> 
+                    What is the best way to reply to you?
+                    <select id="contact-back" name="contact-back">
+                        <optgroup label="Contact Means">
+                        <option value="email-back">Email</option>
+                        <option value="call-back">Phone Number</option>
+                        <option value="no-need">No need to contact me</option>
+                        </optgroup>
+                    </select>
 
-                <br><br>
+                    <br><br>
 
-                What is the best way to reply to you?
-                <select id="contact-back" name="contact-back">
-                    <optgroup label="Contact Means">
-                    <option value="email-back">Email</option>
-                    <option value="call-back">Phone Number</option>
-                    <option value="no-need">No need to contact me</option>
-                    </optgroup>
-                </select>
-
-                <br><br>
-
-                <button type="submit" action="https://reqres.in/api/test">Send Message</button>
-
-            </fieldset>
-        </form>
+                    <button type="submit" action="https://reqres.in/api/test" id="msg-button">Send</button>
+                    <br>
+                </fieldset>
+            </form>
+        </section>
         <br>
     </main>
     <hr>

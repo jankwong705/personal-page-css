@@ -9,11 +9,14 @@
 
 header, footer {
     padding: var(--standard-gap);
+    font-variant: small-caps;
+    font-size: larger;
 }
 
 h1, h2 {
     font-weight: 500;
     font-variant: small-caps;
+    animation: fade 1.5s ease-in-out;
 }
 
 .page-header {
@@ -30,11 +33,15 @@ h1, h2 {
     }
 }
 
-video:hover, img:hover {
+video:hover, img:hover, #msg-button:hover {
     transition: transform 0.5s ease-in-out;
     transform: scale(1.1);
 }
-video:not(:hover), img:not(:hover) {
+job-exp:hover {
+    transition: transform 0.5s ease-in-out;
+    transform: scale(1.01);
+}
+video:not(:hover), img:not(:hover), #msg-button:not(:hover), job-exp:not(:hover) {
     transition: transform 0.5s ease-in-out;
     transform: scale(1);
 }
@@ -64,6 +71,7 @@ nav ul li {
 
 a {
     text-decoration: none;
+    font-variant: normal;
 }
 
 /* Sections */
@@ -125,7 +133,7 @@ h3 {
 job-exp {
     animation: fade 1.5s ease-in-out;
     display: block;
-    padding: var(--standard-gap);
+    padding: var(--standard-gap, 1rem);
     margin: 10px;
     background-color: #ffffff;
     border: 2px solid #021218;
@@ -135,14 +143,36 @@ job-exp {
     font-size: 1.2em;
 }
 
-job-exp:hover {
-    transition: transform 0.5s ease-in-out;
-    transform: scale(1.01);
-}
-
-job-exp:not(:hover) {
-    transition: transform 0.5s ease-in-out;
-    transform: scale(1);
-}
-
 /* Contact */
+#contact {
+    animation: fade 1.5s ease-in-out;
+    padding: var(--standard-gap);
+}
+
+#send-msg-part {
+    font-variant: small-caps;
+    font-size: larger;
+}
+
+.contact-lebel {
+    padding: var(--standard-gap);
+}
+
+.contact-field {
+    width: 40%;                  
+    padding: 5px 3px;           
+    border: 2px solid #ccc;      
+    border-radius: 3px;         
+    font-size: 16px;            
+}
+
+#msg-button, #contact-back {
+    display: block;
+    padding: 8px 20px;
+    border: 2px solid;
+    border-radius: 3px;
+    text-align: center;
+    background-color: #ffffff9e;
+    font-size: 15px;
+    font-weight: 300;
+}
