@@ -11,6 +11,7 @@ header, footer {
     padding: var(--standard-gap);
     font-size: larger;
     font-variant: small-caps;
+    
 }
 
 h1, h2 {
@@ -63,7 +64,7 @@ nav ul {
 }
 
 nav ul li:hover {
-    background-color: #f0f0f0;
+    background-color: color(srgb 0.94 0.94 0.94);
     transform: scale(1.05); /* Slightly enlarges row */
 }
 
@@ -171,7 +172,7 @@ job-exp {
 }
 
 .contact-field {
-    width: 40%;                  
+    width: 80dvw;                  
     padding: 5px 3px;           
     border: 2px solid #ccc;      
     border-radius: 3px;         
@@ -184,7 +185,7 @@ job-exp {
     border: 2px solid;
     border-radius: 3px;
     text-align: center;
-    background-color: #ffffff9e;
+    background-color: color-mix(in srgb, white 82%, transparent);
     font-size: 15px;
     font-weight: 300;
 }
