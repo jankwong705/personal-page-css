@@ -16,7 +16,6 @@
         font-size: x-large !important;
     }
     address {
-        font-weight: 300 !important;
         text-align: left !important;
     }
     nav ul li {
@@ -101,7 +100,10 @@ header, footer {
     font-size: larger;
     font-variant: small-caps;
 }
-
+address {
+    font-weight: 300;
+    text-align: center;
+}
 h1, h2 {
     font-weight: 500;
     font-variant: small-caps;
@@ -276,7 +278,7 @@ job-exp:has(h3) {
     border: 2px solid;
     border-radius: 3px;
     text-align: center;
-    background-color: color-mix(in srgb, rgb(237, 237, 237) 82%);
+    background-color: color-mix(in srgb, rgb(255, 255, 255) 82%);
     font-size: 15px;
     font-weight: 300;
 }
