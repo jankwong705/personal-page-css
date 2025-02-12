@@ -23,8 +23,8 @@
         font-size: x-large !important;
     }
     img, video, iframe {
-        max-height: 60dvh;
-        max-width: 90dvw;
+        max-height: 60vh;
+        max-width: 90vw;
     }
     video:hover, img:hover, #msg-button:hover {
         transition: none !important;
