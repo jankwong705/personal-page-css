@@ -16,15 +16,14 @@
         font-size: x-large !important;
     }
     address {
-        font-size: larger !important;
         font-weight: 300 !important;
     }
     nav ul li {
-        font-size: x-large !important;
+        font-size: x-large;
     }
     img, video, iframe {
-        max-height: 60vh;
-        max-width: 90vw;
+        max-height: 60vh !important;
+        max-width: 70vw !important;
     }
     video:hover, img:hover, #msg-button:hover {
         transition: none !important;
@@ -67,7 +66,7 @@
     }
     img, video, iframe {
         max-height: 60dvh;
-        max-width: 90dvw;
+        max-width: 70dvw;
     }
     #send-msg-part {
         font-variant: small-caps;
