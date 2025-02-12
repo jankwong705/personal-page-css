@@ -276,7 +276,7 @@ job-exp:has(h3) {
     border: 2px solid;
     border-radius: 3px;
     text-align: center;
-    background-color: color-mix(in srgb, rgba(255, 255, 255, 0.337) 82%);
+    background-color: color-mix(in srgb, rgb(237, 237, 237) 82%);
     font-size: 15px;
     font-weight: 300;
 }
