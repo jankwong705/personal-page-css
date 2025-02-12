@@ -158,7 +158,7 @@ nav ul {
 
 nav ul li:hover {
     background-color: color(srgb 0.94 0.94 0.94);
-    transform: scale(1.05); /* Slightly enlarges row */
+    transform: scale(1.05);
 }
 
 nav ul li {
