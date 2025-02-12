@@ -26,6 +26,15 @@
         max-height: 60vh !important;
         max-width: 70vw !important;
     }
+    #food-pic {
+        flex-direction: column !important;
+        align-items: center !important; 
+    }
+    figcaption pre {
+        word-wrap: break-word !important;
+        text-align: center;
+        white-space: normal;
+    }
     video:hover, img:hover, #msg-button:hover {
         transition: none !important;
         transform: none !important;
@@ -212,6 +221,9 @@ edu {
     justify-content: space-evenly;
     align-items: flex-end; 
     flex-wrap: wrap;
+}
+figcaption pre{
+    text-align: center;
 }
 
 /* Experiences */
