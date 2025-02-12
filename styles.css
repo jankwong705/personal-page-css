@@ -60,6 +60,9 @@
         min-width: 80dvw;
         font-size: large !important;
     }
+    fieldset {
+        align-items: center !important;
+    }
 }
 
 /* Tablets */
@@ -273,7 +276,7 @@ job-exp:has(h3) {
     border: 2px solid;
     border-radius: 3px;
     text-align: center;
-    background-color: color-mix(in srgb, white 82%, transparent);
+    background-color: color-mix(in srgb, rgba(255, 255, 255, 0.337) 82%);
     font-size: 15px;
     font-weight: 300;
 }
