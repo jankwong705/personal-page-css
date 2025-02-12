@@ -17,6 +17,7 @@
     }
     address {
         font-weight: 300 !important;
+        text-align: left !important;
     }
     nav ul li {
         font-size: x-large;
